@@ -6,7 +6,7 @@ if __name__ == "__main__":
     TWEETS = "results/tweets.csv"
     LIKES = "results/likes.csv"
 
-    # Creating results file if it isn't there
+    # Creating results folder if it isn't there
     if not os.path.exists("results"):
         os.mkdir("results")
 
@@ -17,7 +17,7 @@ if __name__ == "__main__":
         print("Username:", username)
         c1 = "twint -u {} -o {} --csv".format(username,TWEETS)
         c2 = "twint -u {} --favorites -o {} --csv".format(username,LIKES)
-        c3 = "twint -u {} --followers -o {} --csv".format(username,LIKES)
+        c3 = "twint -u {} --followers -o {} --csv".format(username,FOLLOWERS)
         os.system(c1)
         os.system(c2)
         os.system(c3)
