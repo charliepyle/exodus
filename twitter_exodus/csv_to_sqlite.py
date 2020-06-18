@@ -17,7 +17,6 @@ def main():
         for _, row in df.iterrows():
             follower_tuple = (row['user_id'], 0, 0, 0)
             insert_follower(conn, follower_tuple)
-            #print(follower_tuple)
         
         # TODO -- integrate with csv    
 
