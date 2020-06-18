@@ -7,13 +7,9 @@ def insert_dummy_data(conn, follower):
 def main():
     database = r"twitter_exodus.db"
     
-    
-    
-
     # create a database connection
     conn = create_connection(database)
 
-    # create tables
     with conn:
         
         db_init(conn)
@@ -32,6 +28,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-
-
