@@ -1,0 +1,1 @@
+Each authenticated user is entitled to the proprietary access of their own data. 
